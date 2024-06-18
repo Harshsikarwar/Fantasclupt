@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{%static 'sing-up-in.css'%}">
+        <meta charset="UTF-8" name="veiwport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <img class="poster" src="{%static 'images/poster.png'%}">
+        <div>
+            <h1>SING-UP</h1>
+            <form enctype="multipart/form-data" method="post">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <input type="text" placeholder="Otp" name="opt">
+                <button name="otp_checker" id="otp_checker">Check</button>
+                <input type="submit">
+            </form>
+            <b>Already have account <a>sing-in</a></b>
+        </div>
+    </body>
+</html>

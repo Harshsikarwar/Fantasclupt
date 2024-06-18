@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Fantasclupt_App.views import*
 
 urlpatterns = [
+    path('sing-up/', sing_up_page, name="sing-up"),
     path('admin/', admin.site.urls),
 ]

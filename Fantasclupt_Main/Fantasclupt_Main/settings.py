@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Fantasclupt_App',
 ]
 
 MIDDLEWARE = [
@@ -115,9 +116,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_ROOT='staticfiles'
+STATICFILES_DIRS=[BASE_DIR, "Fantasclupt_App/static"]
+STATIC_URL = 'Fantasclupt_App/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "harshsikarwar2005@gmail.com"
+EMAIL_HOST_PASSWORD = "huttrucxiakvkves"
+EMAIL_USE_TLS = True
