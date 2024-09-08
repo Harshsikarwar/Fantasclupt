@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{%static 'sign-up-in.css'%}">
+        <meta charset="UTF-8" name="veiwport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <img class="poster" src="{%static 'images/poster.png'%}">
+        <img class="poster2" src="{%static 'images/poster-2.png'%}">
+        <div>
+            <h1>SIGN-UP</h1>
+            <form enctype="multipart/form-data" method="post">
+                {%csrf_token%}
+                {%for msg in messages%}
+                <p style="color:white; font-size:18px;">{{msg}}</p>
+                {%endfor%}
+                <input type="text" placeholder="username" name="user" id="user" required>
+                <input type="email" placeholder="Email" name="email" id="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="submit">
+            </form>
+            <b>Already have account <a href="/Fantasclupt/sign-in/">sign-in</a></b>
+        </div>
+    </body>
+</html>

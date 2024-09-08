@@ -19,6 +19,8 @@ from django.urls import path
 from Fantasclupt_App.views import*
 
 urlpatterns = [
-    path('sing-up/', sing_up_page, name="sing-up"),
+    path('Fantasclupt/sign-up/', sign_up_page, name="sign-up"),
+    path('Fantasclupt/sign-in/', sign_in_page, name="sign-in"),
+    path('Fantasclupt/home/', home_page, name="home page"),
     path('admin/', admin.site.urls),
 ]

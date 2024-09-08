@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{%static 'home.css'%}">
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0" name="veiwport">
+    </head>
+
+    <body>
+        <div class="menu">
+            <ul class="menu_list">
+                <li class="options"><h1>Fantasclupt</h1></li>
+                <li class="options"><b>Home</b></li>
+                <li class="options"><b>Account</b></li>
+                <li class="options"><b>Search</b></li>
+            </ul>
+        </div>
+
+        <main>
+            <img class="display_img" src="{%static '/images/charge.jpg'%}">
+            <div class="display_box">
+                <img class="sub_img" src="{%static '/images/charge.jpg'%}">
+            </div>
+        </main>
+    </body>
+</html>

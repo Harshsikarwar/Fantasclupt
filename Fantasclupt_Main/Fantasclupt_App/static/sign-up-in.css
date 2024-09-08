@@ -9,7 +9,7 @@ div{
     position: fixed;
     display: flexbox;
     width: 50%;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-bottom: 10%;
     margin-left: 25%;
     margin-right: 25%;
@@ -51,28 +51,11 @@ input[type="password"]{
 }
 
 input[type="text"]{
-    display:none;
-    width:30%;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 40px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-#otp_checker{
-    display: none;
-    background-color: red;
-    width:30.6%;
-    margin-left: 35%;
-    margin-right: 35%;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    border-style: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 input[type="submit"]{
@@ -93,11 +76,28 @@ b{
 
 a{
     font-style: italic;
-    color: red;
+    color: rgb(221, 2, 2);
     text-decoration: none;
 }
 
+input:hover{
+    box-shadow:0px 0px 15px 0px red;
+}
+
+a:hover{
+    color: red;
+}
+
 .poster{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0px;
+    top:0px;
+}
+
+.poster2{
+    display:none;
     width:100%;
     height:100%;
     position: fixed;
@@ -115,7 +115,7 @@ a{
     h1{
         font-size:50px;
     }
-    input,#otp_checker{
+    input{
         font-size: 25px;
     }
     b{
@@ -133,7 +133,7 @@ a{
     h1{
         font-size:60px;
     }
-    input,#otp_checker{
+    input{
         font-size: 40px;
     }
     input[type="submit"]{
@@ -142,9 +142,18 @@ a{
     b{
         font-size:35px;
     }
+    .poster{
+        display: none;
+    }
+    .poster2{
+        display: block;
+    }
 }
 
-@media(max-width:50vh){
+@media(max-width:60vh){
+    div{
+        margin-top:50%;
+    }
     input[type="submit"]{
         margin-top:80px;
         margin-bottom:40px;
